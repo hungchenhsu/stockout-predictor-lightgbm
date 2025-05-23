@@ -129,10 +129,48 @@ Deep learning models such as **LSTM** and **TimeGAN** were evaluated during expe
 
 ---
 
+---
+
 ## 🚀 Getting Started
 
-### 1. Environment Setup
+This repository includes a fully functional training pipeline, from feature engineering to model training and evaluation, focused on stock-out prediction using tabular time-series data.  
+**Note:** Inference scripts (e.g., for real-time or batch scoring) are not included in this version, as the focus is on modeling and experimentation.
+
+### 🛠 Prerequisites
+
+- Python 3.11.8
+- Recommended: virtual environment
 
 ```bash
 python -m venv venv && source venv/bin/activate
 pip install -r src/requirements.txt
+```
+
+---
+
+### 📁 Project Files
+
+| File                             | Description |
+|----------------------------------|-------------|
+| `stockout_preprocess.py`         | Feature engineering pipeline that processes daily SKU-level data into model-ready format, including rolling statistics, OOS labeling, and holiday flagging. |
+| `train_lgbm_stockout.py`         | Trains the LightGBM model using 5-fold `GroupKFold` cross-validation and a 5-day hold-out set. Outputs CV metrics and saves the final model. |
+| `lgbm_stockout_model.txt`        | Trained LightGBM model exported in native `.txt` format. Can be reloaded for reuse with `Booster().load_model()`. |
+| `permanent_oos_list.json`        | Contains SKUs that were always out-of-stock during the training window. These are excluded from model training and treated as immediately OOS in evaluation. |
+| `params.yaml`                    | Captures training hyperparameters, features used, evaluation results, and training metadata for full reproducibility. |
+| `training_walkthrough.ipynb`     | Jupyter notebook that demonstrates the full modeling process, including data loading, feature construction, model training, CV evaluation, and interpretability analysis. |
+
+---
+
+### 🧪 How to Run Locally
+
+Once dependencies are installed, you can execute the full pipeline in two main steps:
+
+#### 1. Preprocess your dataset
+
+```bash
+python stockout_preprocess.py --input data/raw/your_dataset.csv
+```
+
+This will generate:
+- train_proc.parquet and test_proc.parquet
+- permanent_oos_list.json
