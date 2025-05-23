@@ -1,0 +1,50 @@
+generated_on: '2025-05-15 00:47:40.638862'
+framework: LightGBM 4.3
+hyperparams:
+  objective: regression
+  n_estimators: 500
+  learning_rate: 0.05
+  max_depth: -1
+  subsample: 0.8
+  colsample_bytree: 0.8
+  random_state: 42
+  n_jobs: -1
+  metric: mae
+categorical_features:
+- itemsku
+numeric_features:
+- mproductid
+- storeid
+- Aisle
+- Section
+- PositionNumber
+- DayofWeek
+- salesQuantity
+- avg_sales_50to8
+- avg_sales_last7
+- DmdForecastQuantity
+- LDEFForecastQuantity
+- CurrentBOH
+- DailyBOH
+- PositiveBOHFlag
+- MDQ
+- BOHgtMDQFlag
+- OOSCount
+- IMSQuantity
+- IMSPickQuantity
+- IMSBackroomQuantity
+- IMSBOH
+- IMSBackroomBOH
+- ShippedQuantity
+- daysSinceLastSale
+- is_holiday
+- boh_mean_3
+- boh_std_3
+- boh_mean_7
+- boh_std_7
+cv_mae_mean: 6.383961064545689
+cv_mae_std: 0.31356171897001084
+holdout_mae: 3.6765814647946056
+holdout_medae: 3.268347072211263
+training_rows: 4299
+training_period: "2024-11-01 \u2192 2024-11-25"
