@@ -146,7 +146,7 @@ pip install -r src/requirements.txt
 
 ---
 
-### 📁 Project Files
+## 📁 Project Files
 
 | File                             | Description |
 |----------------------------------|-------------|
@@ -159,7 +159,7 @@ pip install -r src/requirements.txt
 
 ---
 
-### 🧪 How to Run Locally
+## 🧪 How to Run Locally
 
 Once dependencies are installed, you can execute the full pipeline in two main steps:
 
