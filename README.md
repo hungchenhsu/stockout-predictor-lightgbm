@@ -200,11 +200,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🤝 Citation
 
-If you find this repository helpful in your research, teaching, or professional work,
-please consider citing or linking back to the repository:
+If you find this repository helpful in your research, teaching, or professional work, please consider citing or linking back to the repository:
 
-Hung-Chen Hsu. Phantom Inventory Classifier: Multi-Model Detection of Retail Stock Discrepancies. GitHub, 2025.
-Repository: https://github.com/hungchenhsu/phantom-inventory-classifier
+Hung-Chen Hsu. *Stock-Out Date Predictor: Forecasting Retail Inventory Depletion Using LightGBM*. GitHub, 2025.  
+Repository: [https://github.com/hungchenhsu/stockout-predictor-lightgbm](https://github.com/hungchenhsu/stockout-predictor-lightgbm)
 
 This helps acknowledge the original work and supports open sharing in the machine learning and retail analytics community 🙌
 
