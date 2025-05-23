@@ -191,3 +191,23 @@ Use the included notebook training_walkthrough.ipynb to:
 - Analyze feature importance
 - Interpret hold-out performance and model behavior
 - Document assumptions and modeling decisions for future deployment
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Citation
+
+If you find this repository helpful in your research, teaching, or professional work,
+please consider citing or linking back to the repository:
+
+Hung-Chen Hsu. Phantom Inventory Classifier: Multi-Model Detection of Retail Stock Discrepancies. GitHub, 2025.
+Repository: https://github.com/hungchenhsu/phantom-inventory-classifier
+
+This helps acknowledge the original work and supports open sharing in the machine learning and retail analytics community 🙌
+
+---
+
+Created with 💻 and 🎯 by Hung-Chen Hsu
