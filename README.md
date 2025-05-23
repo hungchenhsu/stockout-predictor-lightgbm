@@ -182,7 +182,7 @@ This will generate:
 
 #### 💡 Optional
 
-Use the included notebook training_walkthrough.ipynb to:
+Use the included notebook [01_training_walkthrough_lgbm.ipynb](01_training_walkthrough_lgbm.ipynb) to:
 - Explore and visualize raw and engineered features
 - Analyze feature importance
 - Interpret hold-out performance and model behavior
