@@ -184,7 +184,7 @@ This will generate:
 - params.yaml
 - Console output with CV metrics and hold-out performance
 
-### 💡 Optional
+#### 💡 Optional
 
 Use the included notebook training_walkthrough.ipynb to:
 - Explore and visualize raw and engineered features
