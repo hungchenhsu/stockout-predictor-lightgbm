@@ -46,28 +46,23 @@ This shift from quantity to timing allows operations teams to prioritize interve
 
 ```text
 stockout-predictor/
-├── data/
-│   ├── raw/                   ← Placeholder for input CSVs
-│   ├── interim/               ← Preprocessed parquet files
-│   └── external/              ← Optional: label or transaction files
-│
-├── models/
-│   └── prod_v1/
+├── model/
+│   └── lgbm/
 │       ├── lgbm_stockout_model.txt     ← Final trained model
 │       ├── permanent_oos_list.json     ← List of always-OOS SKUs
-│       ├── params.yaml                 ← Feature list + hyperparameters
-│       └── model_card.md               ← Documentation of model assumptions
+│       └── params.yaml                 ← Feature list + hyperparameters
 │
 ├── src/
 │   ├── preprocessing/
 │   │   └── stockout_preprocess.py      ← Feature engineering pipeline
 │   ├── training/
 │   │   └── train_lgbm_stockout.py      ← CV training + evaluation
-│   ├── inference/
-│   │   ├── predict_batch.py            ← Batch scoring script
-│   │   └── predict_api.py              ← (Optional) FastAPI endpoint
-│   └── requirements.txt
+│   └── inference/
+│       ├── predict_batch.py            ← Batch scoring script
+│       └── predict_api.py              ← (Optional) FastAPI endpoint
+│   
 │
+├── requirements.txt
 └── README.md
 ```
 
