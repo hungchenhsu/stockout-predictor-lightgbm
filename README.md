@@ -18,7 +18,7 @@ This shift from quantity to timing allows operations teams to prioritize interve
 
 ---
 
-## 📂 Table of Contents
+## 📚 Table of Contents
 
 - [🔍 Use Case](#-use-case)
 - [📁 Repository Structure](#-repository-structure)
