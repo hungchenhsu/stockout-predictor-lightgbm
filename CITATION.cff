@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Stock-Out Date Predictor: Forecasting Retail Inventory Depletion Using LightGBM"
+authors:
+  - family-names: Hsu
+    given-names: Hung-Chen
+    orcid: https://orcid.org/0009-0007-9806-2443
+date-released: 2025-05-22
+version: "1.0"
+url: https://github.com/hungchenhsu/stockout-predictor-lightgbm
+repository-code: https://github.com/hungchenhsu/stockout-predictor-lightgbm
+license: MIT
+type: software
+keywords:
+  - stock-out prediction
+  - inventory forecasting
+  - LightGBM
+  - retail analytics
+  - time-series regression
+abstract: >
+  This project presents a modular and interpretable machine learning pipeline to forecast 
+  the number of days until stock-out for retail inventory SKUs. Built using LightGBM and structured 
+  daily inventory data, the pipeline includes BOH-based rolling features, holiday-aware flags, and 
+  per-SKU grouping to deliver fast and accurate short-horizon depletion predictions. 
+  The model is trained on a 30-day observation window and evaluated using grouped cross-validation. 
+  Source data is excluded due to NDA constraints, but the full codebase is reusable on any structured retail dataset.
