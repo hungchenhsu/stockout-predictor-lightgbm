@@ -25,7 +25,8 @@ This shift from quantity to timing allows operations teams to prioritize interve
 - [⚙️ How It Works](#️-how-it-works)
 - [📊 Model Overview](#-model-overview)
 - [🚀 Getting Started](#-getting-started)
-- [📌 Notes and Assumptions](#-notes-and-assumptions)
+- [📌 📁 Project Files](#-project-files)
+- [🧪 How to Run Locally](#-how-to-run-locally)
 - [📃 License](#-license)
 
 ---
