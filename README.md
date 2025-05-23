@@ -162,7 +162,7 @@ Once dependencies are installed, you can execute the full pipeline in two main s
 #### 1. Preprocess your dataset
 
 ```bash
-python stockout_preprocess.py --input data/raw/your_dataset.csv
+python stockout_preprocess.py --input data/raw/YOUR_DATASET.csv
 ```
 
 This will generate:
