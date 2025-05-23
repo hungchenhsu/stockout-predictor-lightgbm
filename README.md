@@ -61,6 +61,7 @@ stockout-predictor/
 │       ├── predict_batch.py            ← Batch scoring script
 │       └── predict_api.py              ← (Optional) FastAPI endpoint
 │   
+├── environment.yml
 ├── requirements.txt
 └── README.md
 ```
