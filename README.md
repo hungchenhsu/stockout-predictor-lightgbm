@@ -129,8 +129,6 @@ Deep learning models such as **LSTM** and **TimeGAN** were evaluated during expe
 
 ---
 
----
-
 ## 🚀 Getting Started
 
 This repository includes a fully functional training pipeline, from feature engineering to model training and evaluation, focused on stock-out prediction using tabular time-series data.  
@@ -174,3 +172,22 @@ python stockout_preprocess.py --input data/raw/your_dataset.csv
 This will generate:
 - train_proc.parquet and test_proc.parquet
 - permanent_oos_list.json
+
+#### 2. Train the model
+
+```bash
+python train_lgbm_stockout.py
+```
+
+This will generate:
+- lgbm_stockout_model.txt
+- params.yaml
+- Console output with CV metrics and hold-out performance
+
+### 💡 Optional
+
+Use the included notebook training_walkthrough.ipynb to:
+- Explore and visualize raw and engineered features
+- Analyze feature importance
+- Interpret hold-out performance and model behavior
+- Document assumptions and modeling decisions for future deployment
