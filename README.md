@@ -108,7 +108,7 @@ stockout-predictor/
 
 ### Why LightGBM?
 
-Deep learning models such as **LSTM** and **TimeGAN** were evaluated during experimentation. However:
+Deep learning models such as LSTM and TimeGAN were evaluated during earlier experimentation. However:
 
 - Most SKUs had only ~30 days of available data
 - Sequence models required significantly longer time series to converge
